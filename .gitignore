@@ -1,0 +1,11 @@
+.DS_Store
+.ini
+*~
+bazel-*
+
+# CLion/Bazel project
+.idea
+.clwb
+
+MODULE.bazel
+MODULE.bazel.lock

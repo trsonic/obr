@@ -90,9 +90,8 @@ absl::Status ObrCliMain(AudioElementType input_type,
         "Unsupported number of bits per sample: ", input_wav_bits_per_sample));
   }
 
-  LOG(INFO) << "Declared input input_type:"
-            << GetAudioElementTypeStr(input_type) << "; "
-            << "Processing " << input_file << "; " << input_wav_nch
+  LOG(INFO) << "Declared input type: " << GetAudioElementTypeStr(input_type)
+            << "; Processing \"" << input_filename << "\"; " << input_wav_nch
             << " channels; " << input_wav_fs << " Hz; "
             << input_wav_bits_per_sample << " bit; "
             << "processing buffer size: " << buffer_size << " samples.";
@@ -173,7 +172,7 @@ absl::Status ObrCliMain(AudioElementType input_type,
 
   // Write the dummy header.
   CHECK_NE(WriteWavHeader(output_file, 0, input_wav_fs, output_wav_nch), 0)
-      << "Error writing header of file \"" << output_file << "\".";
+      << "Error writing header of file \"" << output_filename << "\".";
 
   // Main processing loop.
   size_t samples_remaining = input_wav_total_number_of_samples;
@@ -233,7 +232,7 @@ absl::Status ObrCliMain(AudioElementType input_type,
   WriteWavHeader(output_file, samples_written, input_wav_fs, output_wav_nch);
   std::fclose(output_file);
 
-  LOG(INFO) << "Finished rendering file \"" << output_file << "\".";
+  LOG(INFO) << "Finished rendering file \"" << output_filename << "\".";
   return absl::OkStatus();
 }
 

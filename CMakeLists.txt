@@ -76,13 +76,14 @@ target_link_libraries(obr PRIVATE
         pffft
         eigen
         absl::base
+        absl::die_if_null
+        absl::flat_hash_map
         absl::log
         absl::log_internal_message
         absl::log_internal_check_op
         absl::status
         absl::statusor
         absl::strings
-        absl::flat_hash_map
 )
 
 # TODO(b/407470208): Define obr tests.

@@ -6,8 +6,8 @@
  * Patent License 1.0, which you can find in the PATENTS file.
  */
 
-#ifndef OBR_AMBISONIC_BINAURAL_DECODER_BINAURAL_FILTERS_H_
-#define OBR_AMBISONIC_BINAURAL_DECODER_BINAURAL_FILTERS_H_
+#ifndef BINAURALFILTERS_
+#define BINAURALFILTERS_
 
 #include <memory>
 #include <string>
@@ -23,8 +23,8 @@ class BinauralFilters {
    *
    * \param filename Filename to be retrieved.
    * \return `std::unique_ptr<std::string>` with raw file data. In case of an
-   *         error, a nullptr is returned. Caller must take over the ownership
-   *         of the returned data.
+   *          error, a nullptr is returned. Caller must take over the ownership of
+   *          the returned data.
    */
   std::unique_ptr<std::string> GetFile(const std::string& filename) const;
 
@@ -36,4 +36,4 @@ class BinauralFilters {
 
 }  // namespace obr
 
-#endif  // OBR_AMBISONIC_BINAURAL_DECODER_BINAURAL_FILTERS_H_
+#endif  // BINAURALFILTERS_

@@ -6,34 +6,17 @@
  * Patent License 1.0, which you can find in the PATENTS file.
  */
 
-#ifndef BINAURAL_FILTERS_3_OA_L_
-#define BINAURAL_FILTERS_3_OA_L_
+#ifndef BINAURAL_FILTERS_3_OA_L_H_
+#define BINAURAL_FILTERS_3_OA_L_H_
 
-#include <memory>
-#include <string>
-#include <unordered_map>
 #include <vector>
 
 namespace obr {
+namespace filter_files {
 
-// Note this class is automatically generated. Do not modify.
-class binaural_filters_3_oa_l {
- public:
-  /*!\brief Looks up and retrieves a file from an asset class.
-   *
-   * \param filename Filename to be retrieved.
-   * \return `std::unique_ptr<std::string>` with raw file data. In case of an
-   *          error, a nullptr is returned. Caller must take over the ownership of
-   *          the returned data.
-   */
-  std::unique_ptr<std::string> GetFile(const std::string& filename) const;
+std::vector<unsigned char> binaural_filters_3_oa_l_GetContents();
 
- private:
-  typedef std::unordered_map<std::string, std::vector<unsigned char>>
-      AssetDataMap;
-  static const AssetDataMap kAssetMap;
-};
-
+}  // namespace filter_files
 }  // namespace obr
 
-#endif  // BINAURAL_FILTERS_3_OA_L_
+#endif  // BINAURAL_FILTERS_3_OA_L_H_

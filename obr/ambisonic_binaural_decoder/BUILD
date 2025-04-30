@@ -104,6 +104,7 @@ cc_library(
         ":planar_interleaved_conversion",
         ":resampler",
         ":wav",
+        "//obr/ambisonic_binaural_decoder/binaural_filters:binaural_filters_wrapper",
         "//obr/audio_buffer",
         "//obr/common",
         "@com_google_absl//absl/log",

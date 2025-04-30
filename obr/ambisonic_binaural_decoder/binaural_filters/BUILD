@@ -1,0 +1,21 @@
+cc_library(
+    name = "binaural_filters_wrapper",
+    srcs = [
+        "binaural_filters_1_oa_l.cc",
+        "binaural_filters_1_oa_l.h",
+        "binaural_filters_1_oa_r.cc",
+        "binaural_filters_1_oa_r.h",
+        "binaural_filters_2_oa_l.cc",
+        "binaural_filters_2_oa_l.h",
+        "binaural_filters_2_oa_r.cc",
+        "binaural_filters_2_oa_r.h",
+        "binaural_filters_3_oa_l.cc",
+        "binaural_filters_3_oa_l.h",
+        "binaural_filters_3_oa_r.cc",
+        "binaural_filters_3_oa_r.h",
+        "binaural_filters_wrapper.cc",
+    ],
+    hdrs = ["binaural_filters_wrapper.h"],
+    visibility = ["//visibility:public"],
+    deps = [],
+)

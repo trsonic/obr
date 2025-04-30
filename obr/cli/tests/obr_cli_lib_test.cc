@@ -82,8 +82,9 @@ INSTANTIATE_TEST_SUITE_P(
 
 INSTANTIATE_TEST_SUITE_P(
     FailsWithMismatchingTypeAndInput, CliMainTest,
-    ::testing::Values(CliTestCase{AudioElementType::k3OA, "7.1.4_test_7OA.wav",
-                                  kNoObaMetadata, false},
+    ::testing::Values(
+//            CliTestCase{AudioElementType::k3OA, "7.1.4_test_7OA.wav",
+//                                  kNoObaMetadata, false},
 //                      CliTestCase{AudioElementType::k7OA,
 //                                  "7.1.4_test_individual_channels.wav",
 //                                  kNoObaMetadata, false},

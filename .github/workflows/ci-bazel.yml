@@ -12,6 +12,13 @@ jobs:
         uses: ./.github/actions/obr-builder
         with:
           platform: linux
+      - name: Upload Bazel test logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: bazel-test-logs-linux-amd64
+          path: bazel-testlogs/**/*.log
+
   macos-arm64:
     runs-on: macos-latest
     steps:
@@ -21,6 +28,13 @@ jobs:
         uses: ./.github/actions/obr-builder
         with:
           platform: macos
+      - name: Upload Bazel test logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: bazel-test-logs-macos-arm64
+          path: bazel-testlogs/**/*.log
+
   macos-amd64:
     runs-on: macos-13
     steps:
@@ -30,6 +44,13 @@ jobs:
         uses: ./.github/actions/obr-builder
         with:
           platform: macos
+      - name: Upload Bazel test logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: bazel-test-logs-macos-amd64
+          path: bazel-testlogs/**/*.log
+
   windows:
     runs-on: windows-latest
     steps:
@@ -39,3 +60,10 @@ jobs:
         uses: ./.github/actions/obr-builder
         with:
           platform: windows
+      - name: Upload Bazel test logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: bazel-test-logs-windows
+          path: bazel-testlogs/**/*.log
+

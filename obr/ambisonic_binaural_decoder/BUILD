@@ -16,12 +16,6 @@ cc_library(
 )
 
 cc_library(
-    name = "binaural_filters",
-    srcs = ["binaural_filters.cc"],
-    hdrs = ["binaural_filters.h"],
-)
-
-cc_library(
     name = "dsp_utils",
     srcs = ["dsp_utils.cc"],
     hdrs = ["dsp_utils.h"],
@@ -100,7 +94,6 @@ cc_library(
     srcs = ["sh_hrir_creator.cc"],
     hdrs = ["sh_hrir_creator.h"],
     deps = [
-        ":binaural_filters",
         ":planar_interleaved_conversion",
         ":resampler",
         ":wav",

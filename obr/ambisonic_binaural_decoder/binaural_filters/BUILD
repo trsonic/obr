@@ -1,3 +1,5 @@
+package(default_visibility = ["//obr:__subpackages__"])
+
 cc_library(
     name = "binaural_filters_wrapper",
     srcs = [
@@ -32,6 +34,5 @@ cc_library(
         "binaural_filters_wrapper.cc",
     ],
     hdrs = ["binaural_filters_wrapper.h"],
-    visibility = ["//visibility:public"],
     deps = [],
 )

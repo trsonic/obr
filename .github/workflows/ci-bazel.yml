@@ -14,7 +14,7 @@ jobs:
           platform: linux
       - name: Upload Bazel test logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bazel-test-logs-linux-amd64
           path: bazel-testlogs/**/*.log
@@ -30,7 +30,7 @@ jobs:
           platform: macos
       - name: Upload Bazel test logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bazel-test-logs-macos-arm64
           path: bazel-testlogs/**/*.log
@@ -46,7 +46,7 @@ jobs:
           platform: macos
       - name: Upload Bazel test logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bazel-test-logs-macos-amd64
           path: bazel-testlogs/**/*.log
@@ -62,7 +62,7 @@ jobs:
           platform: windows
       - name: Upload Bazel test logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bazel-test-logs-windows
           path: bazel-testlogs/**/*.log

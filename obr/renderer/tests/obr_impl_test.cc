@@ -123,8 +123,8 @@ TEST(ObrImplTest, TestRenderAmbisonicsAndMeasureBroadbandILD) {
 
   std::vector<AudioElementType> audio_elements = {
       AudioElementType::k1OA, AudioElementType::k2OA, AudioElementType::k3OA,
-//      AudioElementType::k4OA, AudioElementType::k5OA, AudioElementType::k6OA,
-//      AudioElementType::k7OA,
+      AudioElementType::k4OA, AudioElementType::k5OA, AudioElementType::k6OA,
+      AudioElementType::k7OA,
   };
 
   const std::pair<float, double> azimuth_ILDs[] = {

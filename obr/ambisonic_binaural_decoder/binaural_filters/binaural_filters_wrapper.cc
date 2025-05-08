@@ -11,20 +11,20 @@
 namespace obr {
 
 const BinauralFiltersWrapper::AssetMap BinauralFiltersWrapper::kAssetMap = {
-  {"1OA_L", filter_files::binaural_filters_1_oa_l_GetContents},
-  {"1OA_R", filter_files::binaural_filters_1_oa_r_GetContents},
-  {"2OA_L", filter_files::binaural_filters_2_oa_l_GetContents},
-  {"2OA_R", filter_files::binaural_filters_2_oa_r_GetContents},
-  {"3OA_L", filter_files::binaural_filters_3_oa_l_GetContents},
-  {"3OA_R", filter_files::binaural_filters_3_oa_r_GetContents},
-  {"4OA_L", filter_files::binaural_filters_4_oa_l_GetContents},
-  {"4OA_R", filter_files::binaural_filters_4_oa_r_GetContents},
-  {"5OA_L", filter_files::binaural_filters_5_oa_l_GetContents},
-  {"5OA_R", filter_files::binaural_filters_5_oa_r_GetContents},
-  {"6OA_L", filter_files::binaural_filters_6_oa_l_GetContents},
-  {"6OA_R", filter_files::binaural_filters_6_oa_r_GetContents},
-  {"7OA_L", filter_files::binaural_filters_7_oa_l_GetContents},
-  {"7OA_R", filter_files::binaural_filters_7_oa_r_GetContents},
+  {"1OA_L", filter_files::BinauralFilters1OAL},
+  {"1OA_R", filter_files::BinauralFilters1OAR},
+  {"2OA_L", filter_files::BinauralFilters2OAL},
+  {"2OA_R", filter_files::BinauralFilters2OAR},
+  {"3OA_L", filter_files::BinauralFilters3OAL},
+  {"3OA_R", filter_files::BinauralFilters3OAR},
+  {"4OA_L", filter_files::BinauralFilters4OAL},
+  {"4OA_R", filter_files::BinauralFilters4OAR},
+  {"5OA_L", filter_files::BinauralFilters5OAL},
+  {"5OA_R", filter_files::BinauralFilters5OAR},
+  {"6OA_L", filter_files::BinauralFilters6OAL},
+  {"6OA_R", filter_files::BinauralFilters6OAR},
+  {"7OA_L", filter_files::BinauralFilters7OAL},
+  {"7OA_R", filter_files::BinauralFilters7OAR},
 };
 
 BinauralFiltersWrapper::BinauralFiltersWrapper() {}

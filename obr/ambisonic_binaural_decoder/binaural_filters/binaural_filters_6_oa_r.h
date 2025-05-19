@@ -14,7 +14,7 @@
 namespace obr {
 namespace filter_files {
 
-std::vector<unsigned char> binaural_filters_6_oa_r_GetContents();
+std::vector<unsigned char> BinauralFilters6OAR();
 
 }  // namespace filter_files
 }  // namespace obr

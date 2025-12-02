@@ -13,7 +13,7 @@ cc_library(
         ":partitioned_fft_filter",
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -24,7 +24,7 @@ cc_library(
     deps = [
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -36,7 +36,7 @@ cc_library(
         "//obr/audio_buffer",
         "//obr/audio_buffer:simd_utils",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
         "@pffft",
     ],
 )
@@ -51,7 +51,7 @@ cc_library(
         "//obr/audio_buffer",
         "//obr/audio_buffer:simd_utils",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -64,7 +64,7 @@ cc_library(
         "//obr/audio_buffer",
         "//obr/audio_buffer:simd_utils",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -77,7 +77,7 @@ cc_library(
         "//obr/audio_buffer",
         "//obr/audio_buffer:simd_utils",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -87,7 +87,7 @@ cc_library(
     hdrs = ["sample_type_conversion.h"],
     deps = [
         "//obr/audio_buffer:simd_utils",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -102,9 +102,9 @@ cc_library(
         "//obr/ambisonic_binaural_decoder/binaural_filters:binaural_filters_wrapper",
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/log",
-        "@com_google_absl//absl/log:check",
-        "@com_google_absl//absl/log:die_if_null",
+        "@abseil-cpp//absl/log",
+        "@abseil-cpp//absl/log:check",
+        "@abseil-cpp//absl/log:die_if_null",
     ],
 )
 
@@ -120,7 +120,7 @@ cc_library(
     srcs = ["wav_reader.cc"],
     hdrs = ["wav_reader.h"],
     deps = [
-        "@com_google_absl//absl/log:check",
-        "@com_google_absl//absl/log:die_if_null",
+        "@abseil-cpp//absl/log:check",
+        "@abseil-cpp//absl/log:die_if_null",
     ],
 )

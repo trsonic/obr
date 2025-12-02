@@ -58,5 +58,7 @@ cc_library(
         "binaural_filters_4_oa_reverberant_r.h",
         "binaural_filters_wrapper.h",
     ],
-    deps = [],
+    deps = [
+        "@abseil-cpp//absl/types:span",
+    ],
 )

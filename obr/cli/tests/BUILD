@@ -14,7 +14,7 @@ cc_test(
         "//obr/cli:obr_cli_lib",
         "//obr/renderer:audio_element_config",
         "//obr/renderer:audio_element_type",
-        "@com_google_absl//absl/strings",
+        "@abseil-cpp//absl/strings",
         "@com_google_googletest//:gtest_main",
     ],
 )

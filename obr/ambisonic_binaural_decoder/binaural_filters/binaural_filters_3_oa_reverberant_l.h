@@ -9,12 +9,12 @@
 #ifndef BINAURAL_FILTERS_3_OA_REVERBERANT_L_H_
 #define BINAURAL_FILTERS_3_OA_REVERBERANT_L_H_
 
-#include <vector>
+#include "absl/types/span.h"
 
 namespace obr {
 namespace filter_files {
 
-std::vector<unsigned char> BinauralFilters3OAReverberantL();
+absl::Span<const unsigned char> BinauralFilters3OAReverberantL();
 
 }  // namespace filter_files
 }  // namespace obr

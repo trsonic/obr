@@ -16,7 +16,7 @@ cc_library(
         ":channel_view",
         ":simd_utils",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -26,7 +26,7 @@ cc_library(
     hdrs = ["channel_view.h"],
     deps = [
         ":simd_utils",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )
 
@@ -43,6 +43,6 @@ cc_library(
     deps = [
         ":simd_macros",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )

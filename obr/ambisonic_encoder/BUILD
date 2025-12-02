@@ -13,8 +13,8 @@ cc_library(
         ":associated_legendre_polynomials_generator",
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/container:flat_hash_map",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/log:check",
         "@eigen",
     ],
 )
@@ -30,6 +30,6 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )

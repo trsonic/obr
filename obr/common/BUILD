@@ -10,7 +10,7 @@ cc_library(
         "misc_math.h",
     ],
     deps = [
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
         "@eigen",
     ],
 )
@@ -27,7 +27,7 @@ cc_library(
     deps = [
         ":common",
         "//obr/audio_buffer",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
         "@com_google_googletest//:gtest",
     ],
 )

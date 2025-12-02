@@ -9,6 +9,6 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         "//obr/audio_buffer",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
     ],
 )

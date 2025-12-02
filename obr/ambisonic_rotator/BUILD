@@ -12,7 +12,7 @@ cc_library(
     deps = [
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
         "@eigen",
     ],
 )

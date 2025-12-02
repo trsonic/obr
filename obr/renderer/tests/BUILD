@@ -15,7 +15,7 @@ cc_test(
     srcs = ["audio_element_type_test.cc"],
     deps = [
         "//obr/renderer:audio_element_type",
-        "@com_google_absl//absl/status:status_matchers",
+        "@abseil-cpp//absl/status:status_matchers",
         "@com_google_googletest//:gtest_main",
     ],
 )
@@ -30,8 +30,8 @@ cc_test(
         "//obr/renderer:audio_element_config",
         "//obr/renderer:audio_element_type",
         "//obr/renderer:obr_impl",
-        "@com_google_absl//absl/status",
-        "@com_google_absl//absl/status:status_matchers",
+        "@abseil-cpp//absl/status",
+        "@abseil-cpp//absl/status:status_matchers",
         "@com_google_googletest//:gtest_main",
     ],
 )

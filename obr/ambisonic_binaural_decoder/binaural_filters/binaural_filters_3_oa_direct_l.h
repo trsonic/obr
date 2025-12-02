@@ -9,12 +9,12 @@
 #ifndef BINAURAL_FILTERS_3_OA_DIRECT_L_H_
 #define BINAURAL_FILTERS_3_OA_DIRECT_L_H_
 
-#include <vector>
+#include "absl/types/span.h"
 
 namespace obr {
 namespace filter_files {
 
-std::vector<unsigned char> BinauralFilters3OADirectL();
+absl::Span<const unsigned char> BinauralFilters3OADirectL();
 
 }  // namespace filter_files
 }  // namespace obr

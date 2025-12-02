@@ -10,7 +10,7 @@ cc_test(
         "//obr/ambisonic_binaural_decoder:fft_manager",
         "//obr/audio_buffer",
         "//obr/common",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log:check",
         "@com_google_googletest//:gtest_main",
     ],
 )
@@ -55,8 +55,8 @@ cc_test(
     deps = [
         "//obr/ambisonic_binaural_decoder:planar_interleaved_conversion",
         "//obr/audio_buffer",
-        "@com_google_absl//absl/log",
-        "@com_google_absl//absl/log:check",
+        "@abseil-cpp//absl/log",
+        "@abseil-cpp//absl/log:check",
         "@com_google_googletest//:gtest_main",
     ],
 )

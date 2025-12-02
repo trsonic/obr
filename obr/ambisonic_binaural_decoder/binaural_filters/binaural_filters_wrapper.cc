@@ -14,6 +14,7 @@
 #include <unordered_map>
 #include <vector>
 
+#include "absl/types/span.h"
 #include "binaural_filters_1_oa_ambient_l.h"
 #include "binaural_filters_1_oa_ambient_r.h"
 #include "binaural_filters_1_oa_direct_l.h"
@@ -49,7 +50,7 @@ std::unique_ptr<std::string> BinauralFiltersWrapper::GetFile(
     const std::string& filename) const {
   using AssetMap =
       std::unordered_map<std::string,
-                         std::function<std::vector<unsigned char>()>>;
+                         std::function<absl::Span<const unsigned char>()>>;
   static const AssetMap kAssetMap = [] {
     return AssetMap{
         {"1OAAmbientL", filter_files::BinauralFilters1OAAmbientL},

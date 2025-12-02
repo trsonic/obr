@@ -19,7 +19,7 @@ cc_test(
     deps = [
         "//obr/ambisonic_encoder",
         "//obr/audio_buffer",
-        "@com_google_absl//absl/container:flat_hash_map",
+        "@abseil-cpp//absl/container:flat_hash_map",
         "@com_google_googletest//:gtest_main",
     ],
 )

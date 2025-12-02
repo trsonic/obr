@@ -9,12 +9,12 @@
 #ifndef BINAURAL_FILTERS_1_OA_AMBIENT_L_H_
 #define BINAURAL_FILTERS_1_OA_AMBIENT_L_H_
 
-#include <vector>
+#include "absl/types/span.h"
 
 namespace obr {
 namespace filter_files {
 
-std::vector<unsigned char> BinauralFilters1OAAmbientL();
+absl::Span<const unsigned char> BinauralFilters1OAAmbientL();
 
 }  // namespace filter_files
 }  // namespace obr
